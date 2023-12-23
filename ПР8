@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
- <head>
-    <title>Super title</title>
- </head>
- <body>
+<голова>
+    <title>Суперзаголовок</title>
+</голова>
+<тело>
 
-     <ul>
-         <li>
-             <a href="https://kinogo.biz">Фільми</a>
+     <ул>
+         <ли>
+             <a href="https://kinogo.biz">Фильмы</a>
          </li>
-         <li>
-             <a href="https://kinogo.biz/serialy/">Серіали</a>
+         <ли>
+             <a href="https://kinogo.biz/serialy/">Серии</a>
          </li>
-         <li>
+         <ли>
              <a href="https://kinogo.biz/doramy/">Дорами</a>
          </li>
      </ul>
 
-     <p>I love html</p>
-     <p><i>I love html</i></p>
-     <p><b>I love html</b></p>
-     <p><sub>I love html</sub><sup>I love html</sup></p>
-     <img src="./images/image.jpg" alt="Nice picture" />
- </body>
+     <h1>Я люблю HTML</h1>
+     <h2>Я люблю HTML</h2>
+     <h3>Я люблю HTML</h3>
+     <h4>Я люблю HTML</h4>
+     <h5>Я люблю HTML</h5>
+     <h6>Я люблю HTML</h6>
+     <p>Я люблю HTML</p>
+     <img src="./images/image.jpg" alt="Хорошая картинка" />
+</тело>
 </html>
