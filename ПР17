@@ -1,0 +1,37 @@
+HTML
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Super title</title>
+    <link rel="stylesheet" href="./stule.css">
+ </head>
+ <body>
+    <div class="parent">
+        <h1 class="test" id="test-id" style="color: gray;">Hello from Lviv</h1>
+    </div>
+ </body>
+</html>
+
+CSS
+#test-id {
+    color: brown;
+}
+
+.test {
+    color: pink;
+}
+
+body div h1 {
+    color: yellow;
+}
+
+div h1 {
+    color: red;
+}
+
+h1 {
+    color: green!important;
+}
+h1 {
+    color: red!important;
+}
