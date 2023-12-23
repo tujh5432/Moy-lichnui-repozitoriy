@@ -1,0 +1,72 @@
+HTML
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Super title</title>
+    <link rel="stylesheet" href="./stule.css">
+ </head>
+ <body>
+    <div class="parent-1">
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <div class="test">
+            <p>Hello 1</p>
+            <p>Hello 1</p>
+            <p>Hello 1</p>
+            <div>
+                <p>Hello 2</p>
+                <div>
+                    <p>Hello 3</p>
+                    <div>
+                        <p>Hello 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>Hello out</p>
+    <p>Hello out</p>
+    <p>Hello out</p>
+    <p>Hello out</p>
+    <p>Hello out</p>
+    <div>
+        <p>Hello div out</p>
+        <p>Hello div out</p>
+        <p>Hello div out</p>
+    </div>
+
+    <p class="test">Hello test out1</p>
+    <p id="test-1">Hello test out2</p>
+    <p id="test-2">Hello test out3</p>
+ </body>
+</html>
+
+CSS
+.parent-1 > p {
+    color: red;
+}
+.test > p {
+    color: red;
+}
+.parent-1 + p {
+    color: red;
+}
+.parent-1 ~ p {
+    color: red;
+}
+.parent-1 + div{
+    color: red;
+}
+.parent-1 ~ div{
+    color: red;
+}
+p[id] {
+    color: red;
+}
+p[id="test-2"] {
+    color: red;
+}
+p[class="test"] {
+    color: red;
+}
