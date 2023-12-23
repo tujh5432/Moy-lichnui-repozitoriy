@@ -17,13 +17,10 @@
          </li>
      </ul>
 
-     <h1>I love html</h1>
-     <h2>I love html</h2>
-     <h3>I love html</h3>
-     <h4>I love html</h4>
-     <h5>I love html</h5>
-     <h6>I love html</h6>
      <p>I love html</p>
+     <p><i>I love html</i></p>
+     <p><b>I love html</b></p>
+     <p><sub>I love html</sub><sup>I love html</sup></p>
      <img src="./images/image.jpg" alt="Nice picture" />
  </body>
 </html>
