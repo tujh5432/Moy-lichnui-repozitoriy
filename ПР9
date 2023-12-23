@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Super title</title>
+ </head>
+ <body>
+
+     <ul>
+         <li>
+             <a href="https://kinogo.biz">Фільми</a>
+         </li>
+         <li>
+             <a href="https://kinogo.biz/serialy/">Серіали</a>
+         </li>
+         <li>
+             <a href="https://kinogo.biz/doramy/">Дорами</a>
+         </li>
+     </ul>
+
+     <p>I love html</p>
+     <p><i>I love html</i></p>
+     <p><b>I love html</b></p>
+     <p><sub>I love html</sub><sup>I love html</sup></p>
+     <img src="./images/image.jpg" alt="Nice picture" />
+ </body>
+</html>
