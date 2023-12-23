@@ -1,0 +1,56 @@
+HTML
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Super title</title>
+    <link rel="stylesheet" href="./stule.css">
+ </head>
+ <body>
+    <p>some outer cntent</p>
+    <div class="test"></div>
+    <div class="parent">
+        <div class="test-2"></div>
+    </div>
+
+    <div class="test-2">\hello from lviv</div>
+    
+    <div class="test-2">
+        Hello from lviv3
+        <div class="test-3"> Hello from Lviv 4</div>
+    </div>
+ </body>
+</html>
+
+CSS
+/*.test {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.test {
+    width: 50%;
+    height: 100px;
+    background-color: red;
+}
+
+.parent {
+    width: 200px;
+    height: 200px;
+}
+
+.test-2 {
+    width: 50vw;
+    height: 50vh;
+    background-color: blue;
+}*/
+
+html {
+    /*color: red;*/
+    font-size: 16px;
+}
+.test-2 {
+    font-size: 2em;
+}
+.test-3 {
+    font-size: 1rem;
+}
