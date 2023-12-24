@@ -1,0 +1,68 @@
+HTML
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Super title</title>
+    <link rel="stylesheet" href="./stule.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> /*на гугл фонт*/
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>/*на гугл фонт*/
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">/*на гугл фонт*/
+ </head>
+ <body>
+    <div class="header">
+        <ul class="nav-list">
+            <li>
+                <a href="">Про нас</a>
+            </li>
+            <li>
+                <a href="">Блог</a>
+            </li>
+            <li>
+                <a href="">Компанії</a>
+            </li>
+            <li>
+                <a href="">Підтримати організацію</a>
+            </li>
+            <li>
+                <a href="">Книги</a>
+            </li>
+            <li>
+                <a href="">Для медіа</a>
+            </li>
+            <li>
+                <a href="">Контакти</a>
+            </li>
+        </ul>
+    </div>
+ </body>
+</html>
+
+CSS
+body {
+    margin: 0;
+    /*font-family: 'Raleway', sans-serif; на гугл фонт*/
+    font-family: "Raleway", "Arial", "Helvetica", sans-serif;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /*наслідування кольора*/
+}
+
+.header {
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+}
+
+.nav-list li {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
