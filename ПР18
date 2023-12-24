@@ -1,0 +1,61 @@
+HTML
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Super title</title>
+    <link rel="stylesheet" href="./stule.css">
+ </head>
+ <body>
+    <div class="header">
+        <ul class="nav-list">
+            <li>
+                <a href="">Про нас</a>
+            </li>
+            <li>
+                <a href="">Блог</a>
+            </li>
+            <li>
+                <a href="">Компанії</a>
+            </li>
+            <li>
+                <a href="">Підтримати організацію</a>
+            </li>
+            <li>
+                <a href="">Книги</a>
+            </li>
+            <li>
+                <a href="">Для медіа</a>
+            </li>
+            <li>
+                <a href="">Контакти</a>
+            </li>
+        </ul>
+    </div>
+ </body>
+</html>
+
+CSS
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /*наслідування кольора*/
+}
+
+.header {
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+}
+
+.nav-list li {
+    display: inline-block;
+    color: white;
+}
