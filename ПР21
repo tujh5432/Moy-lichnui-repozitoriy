@@ -1,0 +1,92 @@
+HTML
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Super title</title>
+    <link rel="stylesheet" href="./stule.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> /*на гугл фонт*/
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>/*на гугл фонт*/
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">/*на гугл фонт*/
+ </head>
+ <body>
+    <div class="header">
+        <ul class="nav-list">
+            <li>
+                <a href="">Про нас</a>
+            </li>
+            <li>
+                <a href="">Блог</a>
+            </li>
+            <li>
+                <a href="">Компанії</a>
+            </li>
+            <li>
+                <a href="">Підтримати організацію</a>
+            </li>
+            <li>
+                <a href="">Книги</a>
+            </li>
+            <li>
+                <a href="">Для медіа</a>
+            </li>
+            <li>
+                <a href="">Контакти</a>
+            </li>
+            <li>
+                <a href="">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fs-s mr-10 svg-inline--fa fa-heart fa-w-16 heart" data-v-4180a957=""><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" data-v-4180a957="" class=""></path></svg>
+                    Підтримати
+                </a>
+            </li>
+        </ul>
+    </div>
+ </body>
+</html>
+
+CSS
+body {
+    margin: 0;
+    /*font-family: 'Raleway', sans-serif; на гугл фонт*/
+    font-family: "Raleway", "Arial", "Helvetica", sans-serif;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /*наслідування кольора*/
+}
+
+.header {
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+}
+
+.nav-list li {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-list li:last-child a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    background-color: #dd3d53;
+    border-radius: 3px;
+    transition: all .25s ease;
+}
+
+.nav-list li:last-child a:hover {
+    background-color: #c9233a;
+}
+
+.nav-list li:last-child a svg {
+    width: 1em;
+}
