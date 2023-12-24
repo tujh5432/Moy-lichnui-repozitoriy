@@ -1,0 +1,202 @@
+HTML
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Super title</title>
+    <link rel="stylesheet" href="./stule.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+            <a class="lolo-link" href="">
+                <img class="lolo-img" src="https://opencages.com.ua/_nuxt/img/logo-light.9a60eb5.svg" alt="">
+            </a>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a class="nav-list-link" href="">Про нас</a>
+            </li>
+            <li>
+                <a class="nav-list-link" href="">Блог</a>
+            </li>
+            <li>
+                <a class="nav-list-link" href="">Компанії</a>
+            </li>
+            <li>
+                <a class="nav-list-link" href="">Підтримати організацію</a>
+            </li>
+            <li>
+                <a class="nav-list-link" href="">Книги</a>
+            </li>
+            <li>
+                <a class="nav-list-link" href="">Для медіа</a>
+            </li>
+            <li>
+                <a class="nav-list-link" href="">Контакти</a>
+            </li>
+            <li>
+                <a  href="">
+                    <svg class="heart" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fs-s mr-10 svg-inline--fa fa-heart fa-w-16 heart" data-v-4180a957=""><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" data-v-4180a957="" class=""></path></svg>
+                    Підтримати
+                </a>
+            </li>
+        </ul>
+        <div class="nav-toggle">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="burger"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg>
+        </div>
+      </nav>
+    </header>
+ </body>
+</html>
+
+CSS
+body {
+    margin: 0;
+    /*font-family: 'Raleway', sans-serif; на гугл фонт*/
+    font-family: "Raleway", "Arial", "Helvetica", sans-serif;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /*наслідування кольора*/
+}
+
+.header {
+    height: 100vh;
+    padding: 0 20px;
+    background-image: url('https://opencages.com.ua/_nuxt/img/homepage.0151b74.jpg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+.header::after {
+    content: "";
+    background: #0c3632;
+    height: 100%;
+    left: 0;
+    opacity: .85;
+    position: absolute;
+    top: 0;
+    transition: all .25s ease;
+    width: 100%;
+    z-index: 0;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    z-index: 1;
+}
+
+.lolo-link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.lolo-img {
+    height: 40px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    padding: 0 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-list li:last-of-type {
+    padding-right: 0;
+}
+
+.nav-list-link {
+    position: relative;
+    transition: all .25s ease;
+}
+
+.nav-list-link::after {
+    content: "";
+    background: #17baaa;
+    height: 2px;
+    width: 100%;    
+    position: absolute; 
+    bottom: -8px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .25s ease;
+}
+
+.nav-list-link:hover {
+    color: #17baaa;
+}
+
+.nav-list-link:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-list li:last-child a {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #dd3d53;
+    border-radius: 3px;
+    transition: all .25s ease;
+}
+
+.heart {
+    margin-right: 5px;
+}
+
+.nav-list li:last-child a:hover {
+    background-color: #c9233a;
+}
+
+.nav-list li:last-child a svg {
+    width: 1em;
+}
+
+.nav-toggle {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.burger {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    vertical-align: -0.125em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    .nav-list {
+        display: none;
+    }
+    .nav-toggle {
+        display: block;
+    }
+}
