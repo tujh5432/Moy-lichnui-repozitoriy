@@ -1,0 +1,240 @@
+HTML
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aligning</title>
+        <link rel="stylesheet" href="./stule.css">
+
+    </head>
+    <body>
+        <div class="box-container">
+            <div class="box box-1"></div>
+            <div class="box box-2"></div>
+            <div class="box box-3"></div>
+            <div class="box box-4"></div>
+            <div class="box box-5"></div>   
+        </div>
+    </body>
+</html>
+
+CSS
+/*1. Flexbox
+
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.box-1 {
+    background-color: red;
+    height: 200px;
+    order: 3;
+}
+
+.box-2 {
+    background-color: green;
+    order: 1;
+}
+
+.box-3 {
+    background-color: blue;
+    order: 2;
+}
+
+.box-4 {
+    background-color: pink;
+    order: 5;
+}
+
+.box-5 {
+    background-color: yellow;
+    order: 4;
+}*/
+
+/*2.Grid
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: 300px;
+    grid-gap: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.box-1 {
+    background-color: red;
+}
+
+.box-2 {
+    background-color: green;
+}
+
+.box-3 {
+    background-color: blue;
+}
+
+.box-4 {
+    background-color: pink;
+}
+
+.box-5 {
+    background-color: yellow;
+}*/
+
+/*3.Inline-bloc
+
+.box-container {
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.box-1 {
+    background-color: red;
+}
+
+.box-2 {
+    background-color: green;
+}
+
+.box-3 {
+    background-color: blue;
+}
+
+.box-4 {
+    background-color: pink;
+}
+
+.box-5 {
+    background-color: yellow;
+}*/
+
+/*4.Float
+.box-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.box-1 {
+    background-color: red;
+}
+
+.box-2 {
+    background-color: green;
+}
+
+.box-3 {
+    background-color: blue;
+}
+
+.box-4 {
+    background-color: pink;
+}
+
+.box-5 {
+    background-color: yellow;
+}
+
+p {
+    background-color: black;
+    color: white;::after
+    position: relative;
+}*/
+
+/*5.Position absolute
+
+.box-container {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.box-1 {
+    background-color: red;
+}
+
+.box-2 {
+    background-color: green;
+    left: 110px;
+}
+
+.box-3 {
+    background-color: blue;
+    left: 220px;
+}
+
+.box-4 {
+    background-color: pink;
+    left: 330px;
+}
+
+.box-5 {
+    background-color: yellow;
+    left: 440px;
+}*/
+
+/*6. Transform*/
+
+.box-container {
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.box-1 {
+    background-color: red;
+}
+
+.box-2 {
+    background-color: green;
+    transform: translate(110px, -110px);
+}
+
+.box-3 {
+    background-color: blue;
+    transform: translate(220px, -220px);
+}
+
+.box-4 {
+    background-color: pink;
+    transform: translate(330px, -330px);
+}
+
+.box-5 {
+    background-color: yellow;
+    transform: translate(440px, -440px);
+}
+
